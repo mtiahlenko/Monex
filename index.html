@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Монекс</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="#"><img src="images/logo.svg" alt="logo" /></a>
+          </div>
+
+          <div class="header__contacts">
+            <div class="header__adress">
+              <img src="images/adress-ico.svg" alt="" />
+              <h4>ТОВ "Монекс" ЄДРПОУ: 12345678</h4>
+            </div>
+            <div class="header__time">
+              <img src="images/time-ico.svg" alt="" />
+              <h4>Пн-Нд з 9:00 до 20:00</h4>
+            </div>
+            <div class="header__mail">
+              <img src="images/mail-ico.svg" alt="" />
+              <h4><a href="mailto:info@monex.ua">info@monex.ua</a></h4>
+            </div>
+          </div>
+          <div class="header__phone">
+            <img src="images/phone-ico.svg" alt="" />
+            <h4><a href="tel:+380441234567">+38 (044) 123-45-67</a></h4>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="header__nav">
+        <div class="header__nav-list">
+          <ul>
+            <li class="nav-item"><a href="#about">Про нас</a></li>
+            <li class="nav-item"><a href="#catalog">Продукція</a></li>
+            <li class="nav-item"><a href="#advantages">Переваги</a></li>
+            <li class="nav-item"><a href="#contacts">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="header__callback">
+          <a href="" class="header__callback-btn">
+            <img src="images/callback-ico.svg" alt="" />
+            <h5>Зворотній дзвінок</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="selling">
+        <div class="selling__inner">
+          <div class="slider">
+            <div class="slider__card">
+              <h2>Продаж піддонів Б/У у Києві</h2>
+              <h3>
+                Доставка здійснюється цілодобово,<br />у зручний для вас час
+              </h3>
+              <a href="#">Детальніше</a>
+            </div>
+            <div class="slider__card">
+              <h2>Продаж піддонів Б/У у Львові</h2>
+              <h3>
+                Доставка здійснюється цілодобово,<br />у зручний для вас часі
+              </h3>
+              <a href="#">Детальніше</a>
+            </div>
+            <div class="slider__card">
+              <h2>Продаж піддонів Б/У у Харкові</h2>
+              <h3>
+                Доставка здійснюється цілодобово,<br />у зручний для вас час
+              </h3>
+              <a href="#">Детальніше</a>
+            </div>
+          </div>
+          <!-- <div class="selling__background">
+            <img src="images/Selling.jpg" alt="Selling Background" />
+          </div> -->
+        </div>
+      </section>
+      <section class="catalog" id="catalog">
+        <div class="catalog-header" data-aos="fade-right">
+          <h2>ДЕРЕВ'ЯНІ ПІДДОНИ Б/У</h2>
+        </div>
+        <div class="container">
+          <div class="catalog-grid">
+            <article class="product-card">
+              <div class="image-wrapper">
+                <img src="images/article-01.jpg" alt="" />
+              </div>
+              <div class="card-info">
+                <h3>Полегшений піддон 1200x800</h3>
+                <p>
+                  Розмір: 1200х800 мм, тонкий. Вантажопідйомність: 600-800 кг
+                  Товщина дошки: 15-17 мм
+                </p>
+                <button id="orderBtn">Замовити</button>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="image-wrapper">
+                <img src="images/article-02.jpg" alt="" />
+              </div>
+              <div class="card-info">
+                <h3>Типовий 1-й сорт 1200x800</h3>
+                <p>
+                  Розмір: 1200х800 мм. Вантажопідйомність: 1500 кг. Товщина
+                  дошки: 22 мм
+                </p>
+                <button id="orderBtn">Замовити</button>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="image-wrapper">
+                <img src="images/article-03.jpg" alt="" />
+              </div>
+              <div class="card-info">
+                <h3>Типовий 2-й сорт 1200x800</h3>
+                <p>
+                  Розмір: 1200х800 мм. Вантажопідйомність: 1500 кг. Товщина
+                  дошки: 22 мм
+                </p>
+                <button id="orderBtn">Замовити</button>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="image-wrapper">
+                <img src="images/article-04.jpg" alt="" />
+              </div>
+              <div class="card-info">
+                <h3>Європіддон 1-й сорт 1200x800</h3>
+                <p>
+                  Розмір: 1200х800 мм. Вантажопідйомність: 2500 кг. Товщина
+                  дошки: 22-25 мм
+                </p>
+                <button id="orderBtn">Замовити</button>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="image-wrapper">
+                <img src="images/article-05.jpg" alt="" />
+              </div>
+              <div class="card-info">
+                <h3>Європіддон 2-й сорт 1200x800</h3>
+                <p>
+                  Розмір: 1200х800 мм. Вантажопідйомність: 2500 кг. Товщина
+                  дошки: 22-25 мм
+                </p>
+                <button id="orderBtn">Замовити</button>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="image-wrapper">
+                <img src="images/article-06.jpg" alt="" />
+              </div>
+              <div class="card-info">
+                <h3>Площадка 1200x1000</h3>
+                <p>Розмір: 1200х1000 мм. Вантажопідйомність: 1500-2000 кг</p>
+                <button id="orderBtn">Замовити</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__inner">
+          <div class="about__title" data-aos="fade-right">
+            <h2>Про нас</h2>
+          </div>
+          <div class="container">
+            <div class="about__cards">
+              <div class="about__card">
+                <img src="images/card-1.svg" alt="" />
+                <h3>
+                  <span class="about__card-bold">Ми</span><br />
+                  <span class="about__card-orange">10 років</span><br />
+                  <span class="about__card-info">на ринку піддонів</span>
+                </h3>
+              </div>
+              <div class="about__card">
+                <img src="images/card-2.svg" alt="" />
+                <h3>
+                  <span class="about__card-bold">У нас</span><br />
+                  <span class="about__card-orange">12</span><br /><span
+                    class="about__card-info"
+                    >складів по Україні</span
+                  >
+                </h3>
+              </div>
+              <div class="about__card">
+                <img src="images/card-3.svg" alt="" />
+                <h3>
+                  <span class="about__card-bold">Доставка</span><br />
+                  <span class="about__card-orange">24 години</span><br />
+                  <span class="about__card-info">на добу, у будь-який час</span>
+                </h3>
+              </div>
+              <div class="about__card">
+                <img src="images/card-4.svg" alt="" />
+                <h3>
+                  <span class="about__card-bold">У нас</span><br />
+                  <span class="about__card-orange">50 +</span><br />
+                  <span class="about__card-info">постійних клієнтів</span>
+                </h3>
+              </div>
+              <div class="about__card">
+                <img src="images/card-5.svg" alt="" />
+                <h3>
+                  <span class="about__card-bold">Щороку</span><br />
+                  <span class="about__card-orange">300 000 +</span><br />
+                  <span class="about__card-info">одиниць річний обіг</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="advantages__header" data-aos="fade-right">
+          <h2>Чому з нами вигідно</h2>
+        </div>
+        <div class="container">
+          <div class="advantages__cards">
+            <article class="advantages__card">
+              <span class="advantage-number">01</span>
+              <h3 class="advantage-title">Наявність товару</h3>
+              <p class="advantage-text">
+                Потрібні піддони завжди є! Ми підберемо необхідний палет.
+              </p>
+            </article>
+            <article class="advantages__card">
+              <span class="advantage-number">02</span>
+              <h3 class="advantage-title">Стабільність</h3>
+              <p class="advantage-text">
+                Наша надійність підтверджена рекомендаціями провідних компаній.
+              </p>
+            </article>
+            <article class="advantages__card">
+              <span class="advantage-number">03</span>
+              <h3 class="advantage-title">Професіоналізм</h3>
+              <p class="advantage-text">
+                Аналізуємо потреби і вдосконалюємо послуги.
+              </p>
+            </article>
+            <article class="advantages__card">
+              <span class="advantage-number">04</span>
+              <h3 class="advantage-title">Якість</h3>
+              <p class="advantage-text">
+                У нас багатоступеневий контроль якості продукції
+              </p>
+            </article>
+            <article class="advantages__card">
+              <span class="advantage-number">05</span>
+              <h3 class="advantage-title">Економічність</h3>
+              <p class="advantage-text">
+                Знаємо секрети економії у сфері палетної логістики. Скоротіть
+                свої витрати!
+              </p>
+            </article>
+            <article class="advantages__card">
+              <span class="advantage-number">06</span>
+              <h3 class="advantage-title">Цілодобова доставка</h3>
+              <p class="advantage-text">
+                Швидка і акуратна доставка власним транспортом 24/7.
+              </p>
+            </article>
+            <article class="advantages__card">
+              <span class="advantage-number">07</span>
+              <h3 class="advantage-title">Відстрочка платежу</h3>
+              <p class="advantage-text">
+                Ми готові піти назустріч нашим замовникам.
+              </p>
+            </article>
+            <article class="advantages__card">
+              <span class="advantage-number">08</span>
+              <h3 class="advantage-title">Оперативність</h3>
+              <p class="advantage-text">
+                Оперативний підхід і грамотно вибудувана логістика.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="questions__header" data-aos="fade-right">
+          <h2>Залишилися питання?</h2>
+        </div>
+        <div class="container">
+          <div class="questions__inner">
+            <div class="questions__info">
+              <img
+                class="questions-person"
+                src="images/questions__person.png"
+                alt=""
+              />
+              <div class="text-form-wrapper">
+                <!-- <img
+                  src="images/questions-text-place.png"
+                  alt=""
+                  class="text-form"
+                /> -->
+                <p>
+                  Ми із задоволенням відповімо на всі питання і проконсультуємо
+                  по товарних позиціях.
+                </p>
+              </div>
+            </div>
+            <div class="questions__forms">
+              <h3 class="questions__forms-title">Відправити заявку</h3>
+              <div class="questions__forms-wrapper">
+                <h3 class="questions__title"></h3>
+                <div class="questions__inputs">
+                  <div class="input-wrapper">
+                    <input
+                      id="name"
+                      class="questions__input questions__input--name"
+                      type="text"
+                      placeholder="Ваше ім'я *"
+                      required
+                    />
+                    <button
+                      type="button"
+                      class="input-clear"
+                      tabindex="-1"
+                      aria-label="Очистити"
+                    >
+                      &times;
+                    </button>
+                  </div>
+
+                  <div class="input-wrapper">
+                    <input
+                      id="phone"
+                      class="questions__input questions__input--phone art-stranger"
+                      type="tel"
+                      placeholder="Номер телефону *"
+                      required
+                    />
+                    <button
+                      type="button"
+                      class="input-clear"
+                      tabindex="-1"
+                      aria-label="Очистити"
+                    >
+                      &times;
+                    </button>
+                  </div>
+
+                  <div class="input-wrapper">
+                    <input
+                      id="text"
+                      class="questions__input questions__input--text"
+                      type="text"
+                      placeholder="Введіть текст *"
+                      required
+                    />
+                    <button
+                      type="button"
+                      class="input-clear"
+                      tabindex="-1"
+                      aria-label="Очистити"
+                    >
+                      &times;
+                    </button>
+                  </div>
+                </div>
+                <label class="questions__checkbox">
+                  <input
+                    class="questions__checkbox-input"
+                    type="checkbox"
+                    id="agree"
+                  />
+                  Даю згоду на обробку персональних даних
+                </label>
+                <button class="questions__submit" id="sendBtn" disabled>
+                  Відправити
+                </button>
+                <div class="questions__data">
+                  <img src="images/lock.svg" alt="" />
+                  <span>Ваші дані захищені</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__logo">
+            <img src="images/logo.svg" alt="Monex Logo" />
+            <p class="footer__rights">© Всі права захищені.</p>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#">Про нас</a></li>
+              <li class="footer__nav-item"><a href="#">Продукція</a></li>
+              <li class="footer__nav-item"><a href="#">Переваги</a></li>
+              <li class="footer__nav-item"><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer__contacts" id="contacts">
+            <div class="footer__adress">
+              <img src="images/footer__adress.svg" alt="" />
+              <h4>ТОВ "Монекс" ЄДРПОУ: 12345678</h4>
+            </div>
+            <div class="footer__email">
+              <a href="mailto:info@monex.com">
+                <img src="images/footer__email.svg" alt="" />
+                <h4>info@monex.ua</h4>
+              </a>
+            </div>
+            <div class="footer__time">
+              <img src="images/footer__time.svg" alt="" />
+              <h4>Пн-Нд з 9:00 до 20:00</h4>
+            </div>
+          </div>
+          <div class="footer__callback">
+            <p>Замовлення приймаються цілодобово</p>
+            <a href="#">
+              <button class="footer__callback-btn">
+                <img src="images/footer-callback.svg" alt="" />Зворотній дзвінок
+              </button>
+            </a>
+            <div class="footer__phone">
+              <a href="tel:+74951557397">
+                <img src="images/footer__phone.svg" alt="" />
+                <h4>+38 (044) 123-45-67</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__end">
+          <a href="#">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".slider").slick({
+        dots: true,
+        arrows: true,
+        // prevArrow:
+        //   '<button type="button" class="slick-prev my-arrow"><img src="images/arrow-left.svg" alt="prev"></button>',
+        // nextArrow:
+        //   '<button type="button" class="slick-next my-arrow"><img src="images/arrow-right.svg" alt="next"></button>',
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+      });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/maska-nomera.js" type="text/javascript"></script>
+
+    <script>
+      $(".art-stranger").mask("+3 8(099) 999-99-99");
+
+      $.fn.setCursorPosition = function (pos) {
+        if ($(this).get(0).setSelectionRange) {
+          $(this).get(0).setSelectionRange(pos, pos);
+        } else if ($(this).get(0).createTextRange) {
+          var range = $(this).get(0).createTextRange();
+          range.collapse(true);
+          range.moveEnd("character", pos);
+          range.moveStart("character", pos);
+          range.select();
+        }
+      };
+
+      $('input[type="tel"]').click(function () {
+        $(this).setCursorPosition(6); // set position number
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
