@@ -36,6 +36,18 @@ document.querySelectorAll(".questions__input").forEach((input) => {
 
 ///
 $(document).ready(function () {
+  // Відправка форми: показати повідомлення і закрити модалку
+  $(".popup form").on("submit", function (e) {
+    e.preventDefault();
+    $(".popup form").hide();
+    $(".popup-thank").fadeIn(300);
+    setTimeout(function () {
+      $(".popup-bg").fadeOut(300);
+      $("html").removeClass("no-scroll");
+      $(".popup-thank").hide();
+      $(".popup form").show();
+    }, 3500);
+  });
   $(".header__burger").on("click", function (event) {
     $(".header__burger, .header__nav").toggleClass("active");
     $("body").toggleClass("lock");
@@ -47,5 +59,18 @@ $(document).ready(function () {
       $(".header__burger, .header__nav").removeClass("active");
       $("body").removeClass("lock");
     }
+  });
+});
+
+$(document).ready(function () {
+  $(".open-popup").click(function (e) {
+    e.preventDefault();
+    $(".popup-bg").fadeIn(600);
+    $("html").addClass("no-scroll");
+  });
+
+  $(".close-popup").click(function () {
+    $(".popup-bg, .modal").fadeOut(300);
+    $("html").removeClass("no-scroll");
   });
 });

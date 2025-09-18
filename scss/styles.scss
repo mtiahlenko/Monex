@@ -925,8 +925,6 @@ main {
 }
 
 .text-form-wrapper {
-  & img {
-  }
   padding-left: 67px;
   padding-top: 55px;
   font-size: 29px;
@@ -1127,4 +1125,78 @@ main {
 }
 .questions__input:required:invalid + .input-clear + .input-error {
   display: block;
+}
+
+.popup-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5000;
+}
+.popup {
+  img {
+    width: 30px;
+  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  background: #fff;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  padding-top: 60px;
+  @media (max-width: 620px) {
+    width: 90%;
+  }
+}
+
+.close-popup {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+  transition: all 0.3s ease;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & input {
+    width: 60%;
+    font-size: 20px;
+    border: 2px solid #000000;
+    margin-bottom: 30px;
+    height: 40px;
+    padding: 0 15px;
+    @media (max-width: 620px) {
+      font-size: 16px;
+    }
+  }
+}
+.popup form input[type="submit"] {
+  width: auto;
+  background: black;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 0px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background: lighten(black, 10%);
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
